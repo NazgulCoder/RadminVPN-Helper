@@ -26,6 +26,7 @@ Uninstalling with RevoUninstaller and a full system cleaning with CCleaner for f
 ### Planned Features
 Uninstall engine like RevoUninstaller to increase user-friendliness and make this tool "click and go" <br/>
 Improve the batch cleaner <br/>
+Network Metric helper <br/>
 Add a firewall helper to blacklist and whitelist IPs and Apps (so you can block users from public networks) <br/>
 
 ### Download & VirusTotal Scan (for those who are not into coding)
