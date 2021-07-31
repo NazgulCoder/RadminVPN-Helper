@@ -12,6 +12,9 @@ Public Class Form1
         If My.Computer.FileSystem.FileExists("C:\Microsoft1603.diagcab") Then
             My.Computer.FileSystem.DeleteFile("C:\Microsoft1603.diagcab")
         End If
+        If My.Computer.FileSystem.FileExists("C:\cleaner.bat") Then
+            My.Computer.FileSystem.DeleteFile("C:\cleaner.bat")
+        End If
         Process.GetCurrentProcess.Kill()
     End Sub
 
