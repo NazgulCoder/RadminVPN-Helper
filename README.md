@@ -21,3 +21,12 @@ netsh interface teredo set state servername=win1910.ipv6.microsoft.com
 ### Tips
 Indeed it is strongly recommended to still follow the official guides from RadminTech Support on the official Discord. <br/>
 <a href="https://discord.gg/BHsfTuXxMn" target="_blank">RadminVPN Official Discord</a> <br/>
+Uninstalling with RevoUninstaller and a full system cleaning with CCleaner for files and registry is more than welcome <br/>
+
+### Planned Features
+Uninstall engine like RevoUninstaller to increase user-friendliness and make this tool "click and go" <br/>
+Improve the batch cleaner <br/>
+Add a firewall helper to blacklist and whitelist IPs and Apps (so you can block users from public networks) <br/>
+
+Project is very simple and pretty basic coding skills were required, however this source may be helpful for somebody to learn something. <br/>
+If you want to contribute to the project please do not hesitate to open a pull request or write me on Discord (you can find me on RadminVPN Discord posted above)
