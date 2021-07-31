@@ -29,6 +29,9 @@ Improve the batch cleaner <br/>
 Add a firewall helper to blacklist and whitelist IPs and Apps (so you can block users from public networks) <br/>
 
 ### Download & VirusTotal Scan (for those who are not into coding)
+<a href="https://github.com/NazgulCoder/RadminVPN-Helper/releases" target="_blank">Download</a> <br/>
+<a href="https://www.virustotal.com/gui/file/1956fe55296b55c513e2628d19d15c7abd2563cb5e48e466ed2833bebae2414f/detection" target="_blank">VirusTotal Scan</a> <br/> 
+They are false positive, in fact they are pretty unknown AntiViruses companies, however if you feel unsafe you can download the project and compile it yourself <br/> <br/>
 
 
 
