@@ -1,5 +1,5 @@
 # RadminVPN-Helper
-a simple unofficial troubleshooting tool for RadminVPN
+a simple unofficial troubleshooting tool for RadminVPN. Please keep in mind this tool is in beta-testing and is not approved by Famatech. I have received approval from Administrator to develope it and find volunteers to test it out.
 
 ![Capture](https://user-images.githubusercontent.com/85739956/127749270-43f70628-4eb1-406c-b042-a58092f68788.PNG)
 
@@ -27,6 +27,10 @@ Uninstalling with RevoUninstaller and a full system cleaning with CCleaner for f
 Uninstall engine like RevoUninstaller to increase user-friendliness and make this tool "click and go" <br/>
 Improve the batch cleaner <br/>
 Add a firewall helper to blacklist and whitelist IPs and Apps (so you can block users from public networks) <br/>
+
+### Download & VirusTotal Scan (for those who are not into coding)
+
+
 
 Project is very simple and pretty basic coding skills were required, however this source may be helpful for somebody to learn something. <br/>
 If you want to contribute to the project please do not hesitate to open a pull request or write me on Discord (you can find me on RadminVPN Discord posted above)
