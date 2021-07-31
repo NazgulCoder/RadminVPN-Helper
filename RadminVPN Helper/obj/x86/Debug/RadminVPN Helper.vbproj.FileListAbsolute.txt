@@ -1,0 +1,11 @@
+C:\Users\Work Hard Play Hard\Desktop\Progetti\RadminVPN Helper\RadminVPN Helper\bin\x86\Debug\RadminVPN Helper.exe
+C:\Users\Work Hard Play Hard\Desktop\Progetti\RadminVPN Helper\RadminVPN Helper\bin\x86\Debug\RadminVPN Helper.pdb
+C:\Users\Work Hard Play Hard\Desktop\Progetti\RadminVPN Helper\RadminVPN Helper\bin\x86\Debug\RadminVPN Helper.xml
+C:\Users\Work Hard Play Hard\Desktop\Progetti\RadminVPN Helper\RadminVPN Helper\obj\x86\Debug\RadminVPN Helper.vbprojAssemblyReference.cache
+C:\Users\Work Hard Play Hard\Desktop\Progetti\RadminVPN Helper\RadminVPN Helper\obj\x86\Debug\RadminVPN_Helper.Form1.resources
+C:\Users\Work Hard Play Hard\Desktop\Progetti\RadminVPN Helper\RadminVPN Helper\obj\x86\Debug\RadminVPN_Helper.Resources.resources
+C:\Users\Work Hard Play Hard\Desktop\Progetti\RadminVPN Helper\RadminVPN Helper\obj\x86\Debug\RadminVPN Helper.vbproj.GenerateResource.cache
+C:\Users\Work Hard Play Hard\Desktop\Progetti\RadminVPN Helper\RadminVPN Helper\obj\x86\Debug\RadminVPN Helper.vbproj.CoreCompileInputs.cache
+C:\Users\Work Hard Play Hard\Desktop\Progetti\RadminVPN Helper\RadminVPN Helper\obj\x86\Debug\RadminVPN Helper.exe
+C:\Users\Work Hard Play Hard\Desktop\Progetti\RadminVPN Helper\RadminVPN Helper\obj\x86\Debug\RadminVPN Helper.xml
+C:\Users\Work Hard Play Hard\Desktop\Progetti\RadminVPN Helper\RadminVPN Helper\obj\x86\Debug\RadminVPN Helper.pdb

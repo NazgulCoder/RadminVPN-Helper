@@ -1,0 +1,55 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+RadminVPN Helper
+</name>
+</assembly>
+<members>
+<member name="T:RadminVPN_Helper.My.Resources.Resources">
+<summary>
+  Classe di risorse fortemente tipizzata per la ricerca di stringhe localizzate e così via.
+</summary>
+</member>
+<member name="P:RadminVPN_Helper.My.Resources.Resources.ResourceManager">
+<summary>
+  Restituisce l'istanza di ResourceManager nella cache utilizzata da questa classe.
+</summary>
+</member>
+<member name="P:RadminVPN_Helper.My.Resources.Resources.Culture">
+<summary>
+  Esegue l'override della proprietà CurrentUICulture del thread corrente per tutte le
+  ricerche di risorse eseguite utilizzando questa classe di risorse fortemente tipizzata.
+</summary>
+</member>
+<member name="P:RadminVPN_Helper.My.Resources.Resources.cleaner">
+<summary>
+  Cerca una stringa localizzata simile a @echo off
+
+echo Batch Temp File Deleter
+
+timeout 2
+
+DEL &quot;C:\Windows\Temp\*.*&quot; /F /Q /S &gt; C:\Users\%USERNAME%\Desktop\Log.txt 2&gt;&amp;1
+
+DEL &quot;C:\Users\%USERNAME%\AppData\Local\Temp\*.*&quot; /F /Q /S &gt;&gt; C:\Users\%USERNAME%\Desktop\Log.txt 2&gt;&amp;1
+
+DEL &quot;C:\Windows\Prefetch\*.*&quot; /F /Q /S &gt;&gt; C:\Users\%USERNAME%\Desktop\Log.txt 2&gt;&amp;1
+
+echo Job Finished at %time% &gt;&gt; C:\Users\%USERNAME%\Desktop\Log.txt
+
+type C:\Users\%USERNAME%\Desktop\Log.txt
+
+setlocal
+:choice
+set /P c=Would you like to store Log File [Y/N]?
+ [stringa troncata]&quot;;.
+</summary>
+</member>
+<member name="P:RadminVPN_Helper.My.Resources.Resources.Microsoft1603">
+<summary>
+  Cerca una risorsa localizzata di tipo System.Byte[].
+</summary>
+</member>
+</members>
+</doc>
