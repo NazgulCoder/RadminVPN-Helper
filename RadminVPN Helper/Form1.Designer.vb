@@ -26,13 +26,8 @@ Partial Class Form1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.HexTheme1 = New RadminVPN_Helper.HexTheme()
-        Me.disablewindefender = New RadminVPN_Helper.HexButton()
-        Me.HexButton1 = New RadminVPN_Helper.HexButton()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.ipv6fix = New RadminVPN_Helper.HexButton()
+        Me.openform2 = New RadminVPN_Helper.HexButton()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.ethernetdns = New RadminVPN_Helper.HexButton()
-        Me.wifidns = New RadminVPN_Helper.HexButton()
         Me.firewallon = New RadminVPN_Helper.HexButton()
         Me.firewalloff = New RadminVPN_Helper.HexButton()
         Me.killsvcbutton = New RadminVPN_Helper.HexButton()
@@ -41,9 +36,7 @@ Partial Class Form1
         Me.firewalllabel = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.HexClose1 = New RadminVPN_Helper.HexClose()
-        Me.cleanerbutton = New RadminVPN_Helper.HexButton()
         Me.HexTheme1.SuspendLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -55,14 +48,8 @@ Partial Class Form1
         '
         'HexTheme1
         '
-        Me.HexTheme1.Controls.Add(Me.cleanerbutton)
-        Me.HexTheme1.Controls.Add(Me.disablewindefender)
-        Me.HexTheme1.Controls.Add(Me.HexButton1)
-        Me.HexTheme1.Controls.Add(Me.PictureBox3)
-        Me.HexTheme1.Controls.Add(Me.ipv6fix)
+        Me.HexTheme1.Controls.Add(Me.openform2)
         Me.HexTheme1.Controls.Add(Me.PictureBox2)
-        Me.HexTheme1.Controls.Add(Me.ethernetdns)
-        Me.HexTheme1.Controls.Add(Me.wifidns)
         Me.HexTheme1.Controls.Add(Me.firewallon)
         Me.HexTheme1.Controls.Add(Me.firewalloff)
         Me.HexTheme1.Controls.Add(Me.killsvcbutton)
@@ -74,44 +61,17 @@ Partial Class Form1
         Me.HexTheme1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.HexTheme1.Location = New System.Drawing.Point(0, 0)
         Me.HexTheme1.Name = "HexTheme1"
-        Me.HexTheme1.Size = New System.Drawing.Size(317, 212)
+        Me.HexTheme1.Size = New System.Drawing.Size(317, 149)
         Me.HexTheme1.TabIndex = 0
         Me.HexTheme1.Text = "RadminVPN Helper"
         '
-        'disablewindefender
+        'openform2
         '
-        Me.disablewindefender.Location = New System.Drawing.Point(110, 168)
-        Me.disablewindefender.Name = "disablewindefender"
-        Me.disablewindefender.Size = New System.Drawing.Size(122, 30)
-        Me.disablewindefender.TabIndex = 18
-        Me.disablewindefender.Text = "Disable WinDefender"
-        '
-        'HexButton1
-        '
-        Me.HexButton1.Location = New System.Drawing.Point(3, 168)
-        Me.HexButton1.Name = "HexButton1"
-        Me.HexButton1.Size = New System.Drawing.Size(101, 30)
-        Me.HexButton1.TabIndex = 17
-        Me.HexButton1.Text = "Error 1603 Fixer"
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(-76, 147)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(468, 15)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox3.TabIndex = 16
-        Me.PictureBox3.TabStop = False
-        '
-        'ipv6fix
-        '
-        Me.ipv6fix.Location = New System.Drawing.Point(179, 111)
-        Me.ipv6fix.Name = "ipv6fix"
-        Me.ipv6fix.Size = New System.Drawing.Size(78, 30)
-        Me.ipv6fix.TabIndex = 15
-        Me.ipv6fix.Text = "Fix IPv6 DNS"
+        Me.openform2.Location = New System.Drawing.Point(3, 111)
+        Me.openform2.Name = "openform2"
+        Me.openform2.Size = New System.Drawing.Size(170, 30)
+        Me.openform2.TabIndex = 15
+        Me.openform2.Text = "Open Troubleshooting Tools"
         '
         'PictureBox2
         '
@@ -123,22 +83,6 @@ Partial Class Form1
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 14
         Me.PictureBox2.TabStop = False
-        '
-        'ethernetdns
-        '
-        Me.ethernetdns.Location = New System.Drawing.Point(87, 111)
-        Me.ethernetdns.Name = "ethernetdns"
-        Me.ethernetdns.Size = New System.Drawing.Size(86, 30)
-        Me.ethernetdns.TabIndex = 11
-        Me.ethernetdns.Text = "Ethernet0 DNS"
-        '
-        'wifidns
-        '
-        Me.wifidns.Location = New System.Drawing.Point(3, 111)
-        Me.wifidns.Name = "wifidns"
-        Me.wifidns.Size = New System.Drawing.Size(78, 30)
-        Me.wifidns.TabIndex = 10
-        Me.wifidns.Text = "Wi-Fi DNS"
         '
         'firewallon
         '
@@ -203,6 +147,7 @@ Partial Class Form1
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(3, 34)
         Me.PictureBox1.Name = "PictureBox1"
@@ -219,30 +164,20 @@ Partial Class Form1
         Me.HexClose1.TabIndex = 0
         Me.HexClose1.Text = "HexClose1"
         '
-        'cleanerbutton
-        '
-        Me.cleanerbutton.Location = New System.Drawing.Point(238, 168)
-        Me.cleanerbutton.Name = "cleanerbutton"
-        Me.cleanerbutton.Size = New System.Drawing.Size(76, 30)
-        Me.cleanerbutton.TabIndex = 19
-        Me.cleanerbutton.Text = "Cleaner"
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(317, 212)
+        Me.ClientSize = New System.Drawing.Size(317, 149)
         Me.Controls.Add(Me.HexTheme1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "Form1"
         Me.Text = "RadminVPN Helper"
-        Me.TopMost = True
         Me.TransparencyKey = System.Drawing.Color.Fuchsia
         Me.HexTheme1.ResumeLayout(False)
         Me.HexTheme1.PerformLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -259,12 +194,6 @@ Partial Class Form1
     Friend WithEvents killsvcbutton As HexButton
     Friend WithEvents firewallon As HexButton
     Friend WithEvents firewalloff As HexButton
-    Friend WithEvents wifidns As HexButton
-    Friend WithEvents ethernetdns As HexButton
-    Friend WithEvents ipv6fix As HexButton
     Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents HexButton1 As HexButton
-    Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents disablewindefender As HexButton
-    Friend WithEvents cleanerbutton As HexButton
+    Friend WithEvents openform2 As HexButton
 End Class

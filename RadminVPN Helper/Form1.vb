@@ -5,17 +5,30 @@ Public Class Form1
     Dim RadminService() As System.Diagnostics.Process
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        deleteAuxFiles()
     End Sub
 
     Private Sub HexClose1_Click(sender As Object, e As EventArgs) Handles HexClose1.Click
+        deleteAuxFiles()
+        Process.GetCurrentProcess.Kill()
+    End Sub
+
+    Private Sub deleteAuxFiles()
         If My.Computer.FileSystem.FileExists("C:\Microsoft1603.diagcab") Then
             My.Computer.FileSystem.DeleteFile("C:\Microsoft1603.diagcab")
         End If
         If My.Computer.FileSystem.FileExists("C:\cleaner.bat") Then
             My.Computer.FileSystem.DeleteFile("C:\cleaner.bat")
         End If
-        Process.GetCurrentProcess.Kill()
+        If My.Computer.FileSystem.FileExists("C:\reset-internet.bat") Then
+            My.Computer.FileSystem.DeleteFile("C:\reset-internet.bat")
+        End If
+        If My.Computer.FileSystem.FileExists("C:\wmicRadminHelper.txt") Then
+            My.Computer.FileSystem.DeleteFile("C:\wmicRadminHelper.txt")
+        End If
+        If My.Computer.FileSystem.FileExists("C:\wmicRadminHelper.bat") Then
+            My.Computer.FileSystem.DeleteFile("C:\wmicRadminHelper.bat")
+        End If
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
@@ -45,7 +58,7 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub HexButton1_Click(sender As Object, e As EventArgs) Handles killsvcbutton.Click
+    Private Sub killsvcbutton_Click(sender As Object, e As EventArgs) Handles killsvcbutton.Click
         If radminservicelabel.ForeColor = Color.Green Then
             Dim pProcess() As Process = System.Diagnostics.Process.GetProcessesByName("RvControlSvc")
             For Each p As Process In pProcess
@@ -72,44 +85,7 @@ Public Class Form1
         firewall.Start()
     End Sub
 
-    Private Sub HexButton1_Click_1(sender As Object, e As EventArgs) Handles wifidns.Click
-        Shell("netsh dnsclient delete dnsserver ""Wi-Fi"" all")
-        Shell("netsh interface ip set dns ""Wi-Fi"" static 8.8.8.8")
-        Shell("netsh interface ip add dns name=""Wi-Fi"" 8.8.4.4 index=2")
-        Shell("ipconfig /flushdns")
-    End Sub
-
-    Private Sub ethernetdns_Click(sender As Object, e As EventArgs) Handles ethernetdns.Click
-        Shell("netsh dnsclient delete dnsserver ""Ethernet0"" all")
-        Shell("netsh interface ip set dns ""Ethernet0"" static 8.8.8.8")
-        Shell("netsh interface ip add dns name=""Ethernet0"" 8.8.4.4 index=2")
-        Shell("ipconfig /flushdns")
-    End Sub
-
-    Private Sub ipv6fix_Click(sender As Object, e As EventArgs) Handles ipv6fix.Click
-        Shell("netsh int ipv6 set teredo enterpriseclient")
-        Shell("netsh interface teredo set state servername=win1910.ipv6.microsoft.com")
-    End Sub
-
-    Private Sub HexButton1_Click_2(sender As Object, e As EventArgs) Handles HexButton1.Click
-        If My.Computer.FileSystem.FileExists("C:\Microsoft1603.diagcab") Then
-            Process.Start("C:\Microsoft1603.diagcab")
-        Else
-            My.Computer.FileSystem.WriteAllBytes("C:\Microsoft1603.diagcab", My.Resources.Microsoft1603, False)
-            Process.Start("C:\Microsoft1603.diagcab")
-        End If
-    End Sub
-
-    Private Sub disablewindefender_Click(sender As Object, e As EventArgs) Handles disablewindefender.Click
-        Process.Start("wscui.cpl")
-    End Sub
-
-    Private Sub cleanerbutton_Click(sender As Object, e As EventArgs) Handles cleanerbutton.Click
-        If My.Computer.FileSystem.FileExists("C:\cleaner.bat") Then
-            Process.Start("C:\cleaner.bat")
-        Else
-            My.Computer.FileSystem.WriteAllText("C:\cleaner.bat", My.Resources.cleaner, False)
-            Process.Start("C:\cleaner.bat")
-        End If
+    Private Sub openform2_Click(sender As Object, e As EventArgs) Handles openform2.Click
+        Form2.Show()
     End Sub
 End Class

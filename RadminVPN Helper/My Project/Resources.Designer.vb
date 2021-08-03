@@ -63,23 +63,28 @@ Namespace My.Resources
         '''<summary>
         '''  Cerca una stringa localizzata simile a @echo off
         '''
-        '''echo Batch Temp File Deleter
+        '''echo RadminVPN Helper Cleaner
         '''
         '''timeout 2
         '''
-        '''DEL &quot;C:\Windows\Temp\*.*&quot; /F /Q /S &gt; C:\Users\%USERNAME%\Desktop\Log.txt 2&gt;&amp;1
+        '''DEL &quot;C:\Windows\Temp\*.*&quot; /F /Q /S
         '''
-        '''DEL &quot;C:\Users\%USERNAME%\AppData\Local\Temp\*.*&quot; /F /Q /S &gt;&gt; C:\Users\%USERNAME%\Desktop\Log.txt 2&gt;&amp;1
+        '''DEL &quot;C:\Users\%USERNAME%\AppData\Local\Temp\*.*&quot; /F /Q /S
         '''
-        '''DEL &quot;C:\Windows\Prefetch\*.*&quot; /F /Q /S &gt;&gt; C:\Users\%USERNAME%\Desktop\Log.txt 2&gt;&amp;1
+        '''DEL &quot;C:\Windows\Prefetch\*.*&quot; /F /Q /S
         '''
-        '''echo Job Finished at %time% &gt;&gt; C:\Users\%USERNAME%\Desktop\Log.txt
+        '''DEL &quot;%windir%\system32\dllcache\*.*&quot; /F /Q /S
         '''
-        '''type C:\Users\%USERNAME%\Desktop\Log.txt
+        '''DEL &quot;%SysteDrive%\Temp\*.*&quot; /F /Q /S
         '''
-        '''setlocal
-        ''':choice
-        '''set /P c=Would you like to store Log File [Y/N]?        ''' [stringa troncata]&quot;;.
+        '''DEL &quot;%USERPROFILE%\Local Settings\Temp\*.*&quot; /F /Q /S
+        '''
+        '''DEL &quot;%USERPROFILE%\Local Settings\Temporary Internet Files\*.*&quot; /F /Q /S
+        '''
+        '''echo Job Finished at %time%
+        '''
+        '''pause
+        '''exit.
         '''</summary>
         Friend ReadOnly Property cleaner() As String
             Get
@@ -94,6 +99,44 @@ Namespace My.Resources
             Get
                 Dim obj As Object = ResourceManager.GetObject("Microsoft1603", resourceCulture)
                 Return CType(obj,Byte())
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a @echo off
+        '''
+        '''netsh int ip reset
+        '''
+        '''ipconfig /release
+        '''
+        '''ipconfig /all
+        '''
+        '''ipconfig /flushdns
+        '''
+        '''ipconfig /renew
+        '''
+        '''netsh int ip set dns
+        '''
+        '''netsh winsock reset
+        '''
+        '''echo Internet Settings have been resetted correctly. Please restart your Computer
+        '''
+        '''pause
+        '''exit.
+        '''</summary>
+        Friend ReadOnly Property reset_internet() As String
+            Get
+                Return ResourceManager.GetString("reset_internet", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a @echo off
+        '''wmic product get name &gt; C:\wmicRadminHelper.txt.
+        '''</summary>
+        Friend ReadOnly Property wmicRadminHelper() As String
+            Get
+                Return ResourceManager.GetString("wmicRadminHelper", resourceCulture)
             End Get
         End Property
     End Module

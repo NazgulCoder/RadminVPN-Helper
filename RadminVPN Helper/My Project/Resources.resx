@@ -124,4 +124,10 @@
   <data name="Microsoft1603" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Microsoft1603.diagcab;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="reset_internet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reset-internet.bat;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="wmicRadminHelper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wmicRadminHelper.bat;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
 </root>
