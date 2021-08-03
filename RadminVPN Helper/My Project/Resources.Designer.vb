@@ -73,13 +73,13 @@ Namespace My.Resources
         '''
         '''DEL &quot;C:\Windows\Prefetch\*.*&quot; /F /Q /S
         '''
-        '''DEL &quot;%windir%\system32\dllcache\*.*&quot; /F /Q /S
+        '''::DEL &quot;%windir%\system32\dllcache\*.*&quot; /F /Q /S
         '''
-        '''DEL &quot;%SysteDrive%\Temp\*.*&quot; /F /Q /S
+        '''::DEL &quot;%SysteDrive%\Temp\*.*&quot; /F /Q /S
         '''
         '''DEL &quot;%USERPROFILE%\Local Settings\Temp\*.*&quot; /F /Q /S
         '''
-        '''DEL &quot;%USERPROFILE%\Local Settings\Temporary Internet Files\*.*&quot; /F /Q /S
+        '''::DEL &quot;%USERPROFILE%\Local Settings\Temporary Internet Files\*.*&quot; /F /Q /S
         '''
         '''echo Job Finished at %time%
         '''

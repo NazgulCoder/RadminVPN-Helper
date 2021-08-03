@@ -1,4 +1,6 @@
 ﻿Imports System.Management
+Imports System.Net
+Imports System.Net.Http
 
 Public Class Form1
     Dim firewallenabled As String
@@ -6,11 +8,33 @@ Public Class Form1
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         deleteAuxFiles()
+        checkNewVersion()
     End Sub
 
     Private Sub HexClose1_Click(sender As Object, e As EventArgs) Handles HexClose1.Click
         deleteAuxFiles()
         Process.GetCurrentProcess.Kill()
+    End Sub
+
+    Private Async Sub checkNewVersion()
+        ServicePointManager.Expect100Continue = True
+        ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12
+
+        Dim uri As New Uri("https://raw.githubusercontent.com/NazgulCoder/RadminVPN-Helper/main/VERSION")
+        Using client As HttpClient = New HttpClient
+            Using response As HttpResponseMessage = Await client.GetAsync(uri)
+                Using content As HttpContent = response.Content
+                    Dim resultwebrequest As String = Await content.ReadAsStringAsync()
+
+                    If Not resultwebrequest.Contains("1.1") Then 'update here the version, i put contains because github raw for some reason puts vBLf after that
+                        Dim result As DialogResult = MsgBox("You don't have the latest version. Would you like to download it now?", MsgBoxStyle.YesNo, "RadminVPN Helper Update")
+                        If result = DialogResult.Yes Then
+                            Process.Start("https://github.com/NazgulCoder/RadminVPN-Helper/")
+                        End If
+                    End If
+                End Using
+            End Using
+        End Using
     End Sub
 
     Private Sub deleteAuxFiles()

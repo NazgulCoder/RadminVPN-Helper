@@ -36,6 +36,14 @@ DEL &quot;C:\Users\%USERNAME%\AppData\Local\Temp\*.*&quot; /F /Q /S
 
 DEL &quot;C:\Windows\Prefetch\*.*&quot; /F /Q /S
 
+::DEL &quot;%windir%\system32\dllcache\*.*&quot; /F /Q /S
+
+::DEL &quot;%SysteDrive%\Temp\*.*&quot; /F /Q /S
+
+DEL &quot;%USERPROFILE%\Local Settings\Temp\*.*&quot; /F /Q /S
+
+::DEL &quot;%USERPROFILE%\Local Settings\Temporary Internet Files\*.*&quot; /F /Q /S
+
 echo Job Finished at %time%
 
 pause
@@ -65,7 +73,16 @@ netsh int ip set dns
 
 netsh winsock reset
 
-echo Internet Settings have been resetted correctly. Please restart your Computer.
+echo Internet Settings have been resetted correctly. Please restart your Computer
+
+pause
+exit.
+</summary>
+</member>
+<member name="P:RadminVPN_Helper.My.Resources.Resources.wmicRadminHelper">
+<summary>
+  Cerca una stringa localizzata simile a @echo off
+wmic product get name &gt; C:\wmicRadminHelper.txt.
 </summary>
 </member>
 </members>

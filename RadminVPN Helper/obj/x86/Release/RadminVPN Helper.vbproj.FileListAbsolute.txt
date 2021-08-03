@@ -10,3 +10,4 @@ C:\Users\Work Hard Play Hard\Desktop\Progetti\RadminVPN Helper\RadminVPN Helper\
 C:\Users\Work Hard Play Hard\Desktop\Progetti\RadminVPN Helper\RadminVPN Helper\obj\x86\Release\RadminVPN Helper.pdb
 C:\Users\Work Hard Play Hard\Desktop\Progetti\RadminVPN Helper\RadminVPN Helper\obj\x86\Release\RadminVPN Helper.vbprojAssemblyReference.cache
 C:\Users\Work Hard Play Hard\Desktop\Progetti\RadminVPN Helper\RadminVPN Helper\obj\x86\Release\RadminVPN_Helper.Form2.resources
+C:\Users\Work Hard Play Hard\Desktop\Progetti\RadminVPN Helper\RadminVPN Helper\bin\x86\Release\RadminVPN Helper.exe.config
