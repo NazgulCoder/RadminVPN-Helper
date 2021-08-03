@@ -1,7 +1,10 @@
 # RadminVPN-Helper
 a simple unofficial troubleshooting tool for RadminVPN. Please keep in mind this tool is in beta-testing and is not approved by Famatech. I have received approval from Administrator to develope it and find volunteers to test it out.
 
-![Capture](https://user-images.githubusercontent.com/85739956/127749270-43f70628-4eb1-406c-b042-a58092f68788.PNG)
+![Capture](https://user-images.githubusercontent.com/85739956/128055563-34d5502c-4766-41e0-bcad-fe0f711d771e.PNG)
+
+![Capture2](https://user-images.githubusercontent.com/85739956/128055406-99ca69f5-2cc2-4d1b-8c3f-e0d9f5b51d12.PNG)
+
 
 ### Instructions
 -Run it possibly as Administrator <br/>
@@ -13,10 +16,11 @@ a simple unofficial troubleshooting tool for RadminVPN. Please keep in mind this
 netsh int ipv6 set teredo enterpriseclient
 netsh interface teredo set state servername=win1910.ipv6.microsoft.com
 ```
-
+-Reset Internet Settings will reset IPs, DNS, WinSock etc... <br/>
 -Error 1603 Fixer will launch the Microsoft Troubleshooting tool to fix .msi packages from being installed or uninstalled <br/>
 -Disable WinDefender (it won't kill WinDefender but will just help you shutting it down in case you have issues with RadminVPN) <br/>
 -Cleaner will delete some junk temp files to help fixing your issues with RadminVPN <br/>
+-Uninstaller will call the wmic command to execute a full uninstall of .msi packages
 
 ### Tips
 Indeed it is strongly recommended to still follow the official guides from RadminTech Support on the official Discord. <br/>
@@ -25,13 +29,20 @@ Uninstalling with RevoUninstaller and a full system cleaning with CCleaner for f
 
 ### Planned Features
 Uninstall engine like RevoUninstaller to increase user-friendliness and make this tool "click and go" <br/>
-Improve the batch cleaner <br/>
 Network Metric helper <br/>
 Add a firewall helper to blacklist and whitelist IPs and Apps (so you can block users from public networks) <br/>
 
+### Changelog
+```
+03/08/2021 V 1.1
+Improved cleaner
+Added Reset Internet Settings
+Added Uninstaller with cycle to 1click remove all Radmin programs
+```
+
 ### Download & VirusTotal Scan (for those who are not into coding)
 <a href="https://github.com/NazgulCoder/RadminVPN-Helper/releases" target="_blank">Download</a> <br/>
-<a href="https://www.virustotal.com/gui/file/1956fe55296b55c513e2628d19d15c7abd2563cb5e48e466ed2833bebae2414f/detection" target="_blank">VirusTotal Scan</a> <br/> 
+<a href="https://www.virustotal.com/gui/file-analysis/NzAyOTgxOWVkNjVjNjQ3MjI3MzJiYTkxNzZiNjRlM2U6MTYyODAxMDA3Nw==/detection" target="_blank">VirusTotal Scan</a> <br/> 
 They are false positive, in fact they are pretty unknown AntiViruses companies, however if you feel unsafe you can download the project and compile it yourself <br/> <br/>
 
 
